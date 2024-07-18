@@ -43,4 +43,20 @@
 // }while (m <= 5)
 
 
-//task6: 
+//task6: write a program to calclate a factorial a number using do while loop
+
+let anynumber = 5
+sum = 1
+do{    
+    sum *= anynumber
+    anynumber--
+}
+while(anynumber >= 1)
+    console.log(sum);
+
+//Activity Nested Loops
+//task 7: write a program to print a pattern
+
+console.log(2+"*")
+
+
