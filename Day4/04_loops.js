@@ -45,18 +45,48 @@
 
 //task6: write a program to calclate a factorial a number using do while loop
 
-let anynumber = 5
-sum = 1
-do{    
-    sum *= anynumber
-    anynumber--
-}
-while(anynumber >= 1)
-    console.log(sum);
+// let anynumber = 5
+// sum = 1
+// do{    
+//     sum *= anynumber
+//     anynumber--
+// }
+// while(anynumber >= 1)
+//     console.log(sum);
 
 //Activity Nested Loops
 //task 7: write a program to print a pattern
 
-console.log(2+"*")
+// for (let i = 1; i<=5; i++){
+//     let pattern =" "
+//         for(let j =1;j<=i ; j++){
+//             pattern += '*'
+//         }
+//         console.log(pattern)
+   
+// }
 
 
+//actvity 5 loop control statements:
+
+//task  8: write a program to print number from 1 to 10 , but skip the number 5 using the continue statemnt.
+
+//The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
+
+// for (n = 1; n<=10 ; n++){
+//     if (n === 5 ){
+//         continue
+//     }
+//     console.log(n)
+// }
+
+
+
+//task9: write a program to print number from 1 to 10 but stop the loop when the number is 7 using break;
+
+for (k = 1; k<= 10 ; k++){
+    if(k === 7 ){
+        break;
+    }
+    console.log(k)
+}
