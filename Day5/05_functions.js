@@ -92,4 +92,51 @@ function greeting(name, age = 28){
     console.log(`Hi ${name}, I know your age is ${age}`);
 }
 
-greeting("Tinkal")
+greeting("Tinkal");
+
+
+
+//Activity 5: Higher Order Function:
+
+//A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
+
+//Task 9: Write a higher order function, that takes a function and a number, and calls the function that many times.
+
+
+function func(){
+    Number(console.log("Hello Tinkal"))
+};
+
+function HOF(func, num){
+   for(p=1; p<= num; p++){
+    func()
+   }
+}
+
+HOF(func, 4);
+
+
+// //Task 10: Write a higher order function, that takes two function and value, applies the first function to the value, and then applies seconf function to the result.
+// //not able to solved
+
+// function func1(){
+//     let result = b*10
+// };
+
+// function func2(){
+//     result/2
+// }
+
+// function final_func(func1, func2, b){
+//     func2();
+// }
+
+// final_func(func1, func2, 5)
+
+
+
+
+
+
+
+
