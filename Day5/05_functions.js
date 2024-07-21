@@ -52,3 +52,44 @@ let concate = function(string1, string2){
 }
 
 concate(4, 4)
+
+
+//Activity 3: Arrow functions:
+
+//Task 5:   write an arrow function to calclate, the sum of two numbers.
+//=> -- expression
+
+const arrow_func = (i, j) => console.log(i+j);//funct name is arrow_func followed by exression then statemnet
+
+arrow_func(4,7);
+
+
+
+//task 6: write an arrow function to check, if a string contains a specific character and return boolean.
+
+// let any_string = "Hello Ji";
+
+const string_check = (any_string, s) => console.log(any_string.includes(s) ? "true":"false")
+
+string_check("Hello", "H");
+    
+//Activity 4: Function parameters and default values;
+//task 7: Write a function that takes two parameters and return thier product. Provide a default value for the second param.
+
+
+const default_val = 5;
+
+function find_product(n){
+    console.log(default_val * n);
+}
+
+find_product(10)
+
+
+//task 8: Write a function that takes a person name, and age and return a greeting message. Provide a default value for the age.
+
+function greeting(name, age = 28){
+    console.log(`Hi ${name}, I know your age is ${age}`);
+}
+
+greeting("Tinkal")
