@@ -55,4 +55,50 @@ console.log(array2= array1.map((x) => x * 2))
 console.log(array1.filter((x)=> x%2==0));
 
 
-//Task 9: use the reduce method to calculate the sum of all numbers in arra and log the array.
+//Task 9: use the reduce method to calculate the sum of all numbers in array and log the array.
+
+
+
+const result = array1.reduce((x,y) =>   x + y)
+
+console.log(result);
+
+
+
+// Activity  4: array iteration
+
+//Task 10:  Use a for loop iterate over the array and log each element.
+
+
+ for(let n of array1){
+    console.log(n); 
+};
+
+
+
+//Task 11: use a forEach method to iterate over the array and log  each elements.
+
+    //The forEach() method of Array instances executes a provided function once for each array element.
+
+
+array2.forEach((x) => console.log(x))
+
+
+//Activity 5:  Multi Dimenstional Array
+
+//Task 12: Create a two dimentional array (matrix) and log the entire array.
+
+let array_2d = [
+    ["John Doe", 20, 60, "A"],
+    ["Jane Doe", 10, 52, "B"],
+    ["Alice George", 28, 62, "A"],
+    ["Petr Chess", 5, 24, "F"],
+    ["Ling Jess", 28, 43, "A"],
+    ["Ben Liard", 16, 51, "B"]
+  ];
+
+  console.table(array_2d);
+
+  //Task 13: acess a specific element from the array
+
+  console.log(array_2d[0][0])
