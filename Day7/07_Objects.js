@@ -41,10 +41,30 @@ console.log(book_detail.year);
 //Activity 3: Nested Object
 
 //Task 5: Create a nested object represting a library, with properties like name and books (an array of book object), and log the library object to the console.
+//Task 6: Access and log the name of the library and title of all the books in the library.
+
+let library = {
+    name : 'patel_nagar',
+    books: [{title1: 'Harypotter Part1', year: 2005, 'Author': 'J.K Rowlings'},
+            {title: 'Harypotter Part2', year: 2007, 'Author': 'J.K Rowlings'},
+            {title: 'Harypotter Part3', year: 2009, 'Author': 'J.K Rowlings'}
+        ]
+};
+
+console.log(library);
 
 
 
+//Activity 4: The "this" keyword:
 
+//Task 7: Add a method to the book object that uses the this keyword to return a string with the books title and year, and log the result by calling this methid.
+
+
+library.titleAndAuthor = function(){
+    return `Title is: ${this.title1} `
+}
+
+console.log(library.titleAndAuthor());
 
 
 
