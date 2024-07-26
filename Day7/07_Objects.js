@@ -43,15 +43,16 @@ console.log(book_detail.year);
 //Task 5: Create a nested object represting a library, with properties like name and books (an array of book object), and log the library object to the console.
 //Task 6: Access and log the name of the library and title of all the books in the library.
 
+
 let library = {
-    name : 'patel_nagar',
-    books: [{title1: 'Harypotter Part1', year: 2005, 'Author': 'J.K Rowlings'},
-            {title: 'Harypotter Part2', year: 2007, 'Author': 'J.K Rowlings'},
-            {title: 'Harypotter Part3', year: 2009, 'Author': 'J.K Rowlings'}
-        ]
-};
+    name : 'Patel Nagar',
+    Book_Titles : ['Harrypotter1', 'Harrpypotter2'],
+    Book_Years : [2004,2007]
+
+}
 
 console.log(library);
+
 
 
 
@@ -61,7 +62,7 @@ console.log(library);
 
 
 library.titleAndAuthor = function(){
-    return `Title is: ${this.title1} `
+    return `Title is: ${this.Book_Titles} and Years are: ${this.Book_Years} `
 }
 
 console.log(library.titleAndAuthor());
@@ -69,3 +70,17 @@ console.log(library.titleAndAuthor());
 
 
 
+//Activity 5: Object Iteration
+
+//Task 8: use a for..in loop to iterate over the property of the book object and log each propert and book value to the console.
+
+
+for (property in book_detail){
+    console.log(property , book_detail[property])
+}
+
+
+//Task 9: Use Object.keys and Object.values method to log all the keys and values of the object/
+
+console.log(Object.keys(book_detail))
+console.log(Object.values(book_detail))
