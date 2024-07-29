@@ -61,6 +61,57 @@ console.log(title,Year,Author);
 
 //Activity 3: Spread and Rest Operators
 
+//Task 5: Use the spread operator to create a new array that includes all elements of the existing array plus additional element, and log the new array to the console.
+
+
+const array2 = [3,4,5]
+const new_arr = [...array2,6,5,53,3,4]
+
+console.log(new_arr);
+
+
+//Task 6: Use the rest operator in the function to accept an arbitrary number of arguments, sum them and return the result.
+
+
+
+function sum(...args){
+    total = 0
+    for (i of args){
+        total += i
+    }
+    return total
+}
+
+console.log(sum(1,2,3))
+
+
+
+//Activity 4: Default Parameters
+
+//Task 7: Write a function that takes two paramters and return thier product, with the second parameter having default value 1.
+//Log the result by calling this function with and without the second parameter.
+
+
+function example(x, y = 1){
+    return x*y
+}
+
+console.log(4*5);
+console.log(4);
+
+
+
+
+//Activity 5: Enhanced Object literals.
+
+//Task 8: Use enhanced object literals to create an object with methods and properties , and log the object in the console.
+
+
+
+
+
+
+
 
 
 
